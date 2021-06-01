@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kvelail's Corona Virus App</title>
+</head>
+<body>
+
+    <!-- Showcase -->
+
+    <section id="showcase">
+        <div class="container showcase-center">
+            <div class="showcase-box">
+                <h1 class="showcase-heading">
+                    <span>COVID-19</span> <br>
+                    Latest Updates
+                </h1>
+                <p class="showcase-para">
+                    Stay informed and follow advice given <br>by government
+                </p>
+                <a href="#cases" class="btn">
+                    cases
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Showcase -->
+    
+    <!-- Cases -->
+
+    <section id="cases">
+       <div class="container">
+            <div class="page-heading">
+                <h2>global summary</h2>
+                <div class="underline"></div>
+                <h3>
+                    A summary of new and total cases updated daily
+                </h3>
+            </div>
+            <div class="cases-center">
+                <div class="cases-box">
+                    <img src="img/cases-imgs/new-confirmed-img.svg" alt="new-confirmed-img" class="cases-img">
+                    <span id="new-confirmed" class="cases-span"></span>
+                    <div class="cases-underline"></div>
+                    <h2 class="cases-heading">new confirmed</h2>
+                </div>
+                <div class="cases-box">
+                    <img src="img/cases-imgs/new-recovered-img.svg" alt="new-recovered-img" class="cases-img">
+                    <span id="new-recovered" class="cases-span"></span>
+                    <div class="cases-underline"></div>
+                    <h2 class="cases-heading">new recovered</h2>
+                </div>
+                <div class="cases-box">
+                    <img src="img/cases-imgs/new-deaths-img.svg" alt="new-deaths-img" class="cases-img">
+                    <span id="new-deaths" class="cases-span"></span>
+                    <div class="cases-underline"></div>
+                    <h2 class="cases-heading">new deaths</h2>
+                </div>
+                <div class="cases-box">
+                    <img src="img/cases-imgs/total-confirmed-img.svg" alt="total-confirmed-img" class="cases-img">
+                    <span id="total-confirmed" class="cases-span"></span>
+                    <div class="cases-underline"></div>
+                    <h2 class="cases-heading">total confirmed</h2>
+                </div>
+                <div class="cases-box">
+                    <img src="img/cases-imgs/total-recovered-img.svg" alt="total-recovered-img" class="cases-img">
+                    <span id="total-recovered" class="cases-span"></span>
+                    <div class="cases-underline"></div>
+                    <h2 class="cases-heading">total recovered</h2>
+                </div>
+                <div class="cases-box">
+                    <img src="img/cases-imgs/total-deaths-img.svg" alt="total-deaths-img" class="cases-img">
+                    <span id="total-deaths" class="cases-span"></span>
+                    <div class="cases-underline"></div>
+                    <h2 class="cases-heading">total deaths</h2>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- End of Cases -->
+
+    <!-- Countries -->
+
+    <section id="countries">
+        <div class="container">
+            <div class="page-heading">
+                <h2>countries</h2>
+                <div class="underline"></div>
+                <h3>
+                    Check total cases per country
+                </h3>
+            </div>
+            <form class="countries-form">
+                <input type="text" id="search" placeholder="Enter state name...">
+            </form>
+            <div id="output">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Countries -->
+
+    <!-- Instructions -->
+
+    <section id="instructions">
+        <div class="container">
+            <div class="page-heading">
+                <h2>Instructions</h2>
+                <div class="underline"></div>
+                <h3>
+                    Please follow the instructions given by authorities
+                </h3>
+            </div>
+            <div class="instructions-center">
+                <div class="ins-box">
+                    <img src="img/instructions-imgs/mask-img.svg" alt="mask-img" class="ins-img" id="mask">
+                    <div class="cases-underline"></div>
+                    <h2 class="ins-heading">wear a mask</h2>
+                </div>
+                <div class="ins-box">
+                    <img src="img/instructions-imgs/distance-img.svg" alt="distance-img" class="ins-img" id="distance">
+                    <div class="cases-underline"></div>
+                    <h2 class="ins-heading">keep distance</h2>
+                </div>
+                <div class="ins-box">
+                    <img src="img/instructions-imgs/hands-img.svg" alt="hands-img" class="ins-img" id="hands">
+                    <div class="cases-underline"></div>
+                    <h2 class="ins-heading">wash hands</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- End of Instructions -->
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <div class="container">
+            <h2>Kvelail &copy; <span id="footer-date"></span></h2>
+        </div>
+    </footer>
+
+    <!-- End of Footer -->
+    
+    <script src="js/cases.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

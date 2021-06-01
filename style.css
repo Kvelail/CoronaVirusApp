@@ -1,0 +1,270 @@
+/* Defaults */
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    --orange: #FA2A28;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    background-color: var(--orange);
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    z-index: 1;
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+    border: .1rem solid var(--orange);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+.page-heading {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-heading h2 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+
+.underline {
+    background-color: var(--orange);
+    width: 5rem;
+    height: .3rem;
+    margin: .3rem auto;
+    border-radius: 5rem;
+}
+
+.page-heading h3 {
+    font-size: 1.4rem;
+}
+
+/* End of Defaults */
+
+/* Showcase */
+
+#showcase {
+    background-image: url(img/showcase-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 0.4rem solid var(--orange);
+}
+
+.showcase-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+.showcase-box {
+    text-align: right;
+}
+
+.showcase-heading {
+    font-size: 2.5rem;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.showcase-heading span {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.showcase-para {
+    font-size: 1.3rem;
+}
+
+/* End of Showcase */
+
+/* Cases */
+
+#cases {
+    background-color: #EBEBEB;
+    padding-top: 5rem;
+}
+
+.cases-center {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cases-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cases-img {
+    width: 40%;
+}
+
+.cases-span {
+    font-size: 2rem;
+    margin: .3rem 0;
+}
+
+.cases-underline {
+    width: 20%;
+    background-color: var(--orange);
+    height: .1rem;
+    margin: .3rem 0;
+}
+
+.cases-heading {
+    text-transform: capitalize;
+}
+
+/* End of Cases */
+
+/* Countries */
+
+#countries {
+    background-color: #EBEBEB;
+    padding-top: 5rem;
+}
+
+.countries-form {
+    margin: 3rem 0;
+}
+
+.countries-form input {
+    width: 100%;
+    border: 0.1rem solid var(--orange);
+    border-radius: .7rem;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    color: #111;
+}
+
+#output {
+   display: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.output-box {
+    text-align: center;
+}
+
+.output-state {
+    font-size: 1.9rem;
+}
+
+.output-info h3 {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.output-info h3 span {
+    font-style: italic;
+    color: var(--orange);
+    font-weight: normal;
+}
+
+.output-error {
+    font-size: 1.5rem;
+    color: var(--orange);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* End of Countries */
+
+/* Instructions */
+
+#instructions {
+    background-color: #EBEBEB;
+    padding-top: 5rem;
+}
+
+.instructions-center {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ins-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.ins-img {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+#distance {
+    width: 50%;
+}
+
+.ins-heading {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+}
+
+/* End of Instructions */
+
+/* Footer */
+
+#footer {
+    background-color: var(--orange);
+    color: #fff;
+    text-align-last: center;
+    padding: 3rem 0;
+    font-size: 1.7rem;
+}
+
+/* End of Footer */
+
+/* Keyframes */
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* End of Keyframes */
